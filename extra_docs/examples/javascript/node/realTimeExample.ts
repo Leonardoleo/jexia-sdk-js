@@ -13,6 +13,7 @@ interface Post {
 const dataModule = dataOperations();
 const credentials = {
   projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
   key: "<your-project-api-key>",
   secret: "<your-project-api-secret>",
 };

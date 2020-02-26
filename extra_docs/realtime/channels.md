@@ -8,19 +8,20 @@ When an application sends a message to the channel, everyone subscribed to that 
 For more information about channels management, message size limitations and so, please read the official [Jexia documentation page](https://www.jexia.com/en/docs/jexia-pub-sub-service/).  
   
 ### Initialize  
-To use real-time communication initialize Jexia client with the real-time module:  
-  
+To use real-time communication initialize Jexia client with the real-time module:
+
 ``` javascript
-import { jexiaClient, realTime } from "jexia-sdk-js";  
-  
-const rtm = realTime();  
-  
-jexiaClient().init({  
-  projectID: "your-project-id",  
-  key: "your-api-key",    
-  secret: "your-api-secret"  
-}, rtm);  
-```  
+import { jexiaClient, realTime } from "jexia-sdk-js";
+
+const rtm = realTime();
+
+jexiaClient().init({
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+  key: "<your-project-api-key>",
+  secret: "<your-project-api-secret>",
+}, rtm);
+```
 
 Then you can get your channel object (considered that channel has been already created in management application, otherwise an error will be thrown, see "Handling errors" below):
 

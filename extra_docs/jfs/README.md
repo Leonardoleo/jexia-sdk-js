@@ -16,9 +16,10 @@ import { jexiaClient, fileOperations } from "jexia-sdk-js/node"; // "jexia-sdk-j
 const jfs = fileOperations();
 
 jexiaClient().init({
-  projectID: "your-project-id",  
-  key: "your-api-key",  
-  secret: "your-api-secret"  
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+  key: "<your-project-api-key>",
+  secret: "<your-project-api-secret>",
 }, jfs);
 ```
 
@@ -113,9 +114,10 @@ import { jexiaClient, fileOperations, realTime } from "jexia-sdk-js/node";
 const jfs = fileOperations();
 
 jexiaClient().init({
-  projectID: "your-project-id",
-  key: "your-project-key",
-  secret: "your-project-secret"
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+  key: "<your-project-api-key>",
+  secret: "<your-project-api-secret>",
 }, jfs, realTime());
 
 const fileset = jfs.fileset("fileset_name");
@@ -151,9 +153,10 @@ const jfs = fileOperations({
 });
 
 jexiaClient().init({
-  projectID: "your-project-id",
-  key: "your-project-key",
-  secret: "your-project-secret"
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+  key: "<your-project-api-key>",
+  secret: "<your-project-api-secret>",
 }, jfs, realTime());
 
 const fileset = jfs.fileset("fileset_name");

@@ -7,23 +7,26 @@ UMS provides an ability to manage user accounts, sign-up and sign-in to the Jexi
 #### Return values
 Some of the methods of this module such as `select()`, `update()` and `delete()` return observable, but other return `Promise` type. This might be changed soon and all methods will return an observable.  
   
-### Initialize  
-If you want to use UMS module, just add it to the Jexia Client initialization:  
-```javascript 
-import { jexiaClient, UMSModule } from "jexia-sdk-js";  
-  
-const ums = new UMSModule();   
-jexiaClient().init({    
-  projectID: "your-project-id",    
-  key: "your-api-key",    
-secret: "your-api-secret" }, ums); 
-```    
- If you are going to use UMS authorization, you can omit key/secret options,   
- but this requires UMS signing in before making any data request:  
-```javascript  
-jexiaClient().init({    
- projectID: "your-project-id"  
-}, ums); 
+### Initialize
+If you want to use UMS module, just add it to the Jexia Client initialization:
+```javascript
+import { jexiaClient, UMSModule } from "jexia-sdk-js";
+
+const ums = new UMSModule();
+jexiaClient().init({
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+  key: "<your-project-api-key>",
+  secret: "<your-project-api-secret>",
+}, ums);
+```
+ If you are going to use UMS authorization, you can omit key/secret options,
+ but this requires UMS signing in before making any data request:
+```javascript
+jexiaClient().init({
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+}, ums);
 ```
 
 ### Sign-in user to the Jexia project  

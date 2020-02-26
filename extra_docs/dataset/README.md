@@ -9,11 +9,12 @@ import { jexiaClient, dataOperations } from "jexia-sdk-js/node"; // "jexia-sdk-j
 const dataModule = dataOperations();  
   
 jexiaClient().init({  
-  projectID: "<your-project-id>",  
-  key: "<your-project-api-key>",  
-  secret: "<your-project-api-secret>",  
-}, dataModule);  
-```  
+  projectID: "<your-project-id>",
+  zone: "<your-project-zone>",
+  key: "<your-project-api-key>",
+  secret: "<your-project-api-secret>",
+}, dataModule);
+```
 
 ### [Getting a dataset object](#getting-dataset)
 Dataset object can be received from the `dataModule` just by its name:
