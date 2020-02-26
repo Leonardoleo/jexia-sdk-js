@@ -153,6 +153,7 @@ export function deepClone<T>(obj: T): T {
 export const validClientOpts = {
   key: "validKey",
   projectID: "validProjectID",
+  zone: "validZone",
   refreshInterval: 500,
   secret: "validSecret",
 };
